@@ -2,14 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Športový klub Keido</title>
+        <title>Filip Baltovič</title>
         <style>
+
+            html, body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
             body {
                 font-family: "Arial","sans-serif";
                 margin: 0;
             }
             a {
-                color: #f41515;
+                color: orange;
                 text-decoration: none;
             }
             a:hover {
@@ -23,43 +29,18 @@
             h1{
                 text-align: center;
                 font-size: 4em;
-                font-family: "Impact","Arial","sans-serif";
-                background-color: #f41515;
+                font-family: "Bahnschrift","Arial","sans-serif";
+                background-color: orange;
                 color: white;
                 padding: 10px 5px;
                 width: 100%;
+                margin-top: 0;
+                margin-bottom: 80px;
             }
             #uvod {
-                margin-top: 80px;
+                margin-top: 65px;
             }
-            header table {
-                display: block;
-                width: 80%;
-                text-align: center;
-                padding: 5px;
-                margin: auto;
-                border-collapse: collapse;
-            }
-            header td {
-                border: none;
-                width: 14.3%;
-            }
-            header a {
-                color: black;
-            }
-            header a:hover {
-                color: #f41515;
-                text-decoration: none;
-            }
-            header {
-                height: 80px;
-                width: 100%;
-                position: fixed;
-                top: 0;
-                overflow: hidden;
-                background-color: ghostwhite;
-                z-index: 9;
-            }
+            
             section {
                 scroll-margin-top: 80px;
                 margin: 0;
@@ -67,317 +48,60 @@
             p {
                 margin: 20px;
             }
-            #trening, #etiketa, #obr3, #miesto {
-                width: 100%;
-            }
+            
             h2 {
                 margin-left: 50px;
                 font-size: 2em;
-                color: #f41515;
+                color: orange;
                 font-family: "Bahnschrift","Times New Roman","serif";
             }
-            aside {
-                position: fixed;
-                bottom: 5px;
-                right: 5px;
-                font-weight: bold;
-                font-size: 1.5em;
-                width: 25%;
-                min-width: 200px;
-                height: auto;
-                background-color: black;
-                align-items: center;
-                border: 1px solid black;
-                border-radius: 7px;
-                color: white;
-                z-index: 10;
-            }
-            aside:hover {
-                top:85px;
-                bottom: auto;
-            }
-            #treningy table {
-                margin-left: 40px;
-                margin-right: 40px;
-                border-collapse: collapse;
-                text-align: center;
-            }
-            #treningy th {
-                background-color: black;
-                color: white;
-            }
-            #treningy td,th {
-                padding: 10px;
-                width: 25%;
-                border: thick solid black;
-            }
-            #nic {
-                border: none;
-                background-color: white !important;
-            }
-            #obr2 {
 
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 20px;
-            }
-            #stlpce {
-                display: flex;
-            }
-            #majster, #trener {
-                flex: 50%;
-            }
-            #majster {
-                margin-left: 40px;
-                margin-right: auto;
-            }
-            #trener {
-                margin-left: auto;
-                margin-right: 40px;
-            }
-            #majster h2, #trener h2 {
-                text-align: center;
-            }
-            #majster img, #trener img {
-                display: block;
-                margin: auto;
-            }
-            #trener ul {
-                list-style-type: square;
-            }
-            dt {
-                font-weight: bold;
-            }
-            #galeria table {
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-                border-collapse: collapse;
-            }
-            #galeria td {
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
-            #galeria img {
-                width: 80%;
-            }
-            #galeria {
-                margin-bottom: 60px;
-            }
             footer {
                 background-color: lightgray;
+                width: 100%;
                 margin-bottom: 0;
                 overflow: hidden;
+                padding: 20px;
+                margin-bottom: 0;
+                position: absolute;
+                bottom: 0;
             }
-            #facebook, #youtube, #gmail {
-                height: 50px;
-                margin: 10px 20px;
+
+            #github, #gmail{
+                height: 30px;
+                margin: 20px 20px;
+                margin-bottom: 0;
                 display: inline;
             }
-            address {
-                margin: 20px;
-            }
-            #copy {
-                margin-bottom: 10px;
-            }
-            #nastup ol {
-                position: relative;
-                left: 40px;
-            }
-            #nastup {
-                z-index: 1;
-            }
+
+
+            
         </style>
     </head>
     <body>
-        <header>
-            <nav>
-            <table>
-                <tr>
-                    <td><a href=#uvod>Úvod</a></td>
-                    <td><a href=#treningy>Rozvrh</a></td>
-                    <td><a href=#stlpce>Náš majster a tréner</a></td>
-                    <td><img id="logo" src="obr/logo.png" alt="logo"></td>
-                    <td><a href=#nastup>Nástup pri tréningu</a></td>
-                    <td><a href=#pravidla>Pravidlá v dojo</a></td>
-                    <td><a href=#galeria>Galéria</a></td>
-                </tr>
-            </table>
-            </nav>
-        </header>
-        <aside>
-            <p>Tréningy Kung-Fu sú zrušené do odvolania.</p>
-        </aside>
         <section id="uvod">
-            <h1>Klub Nord Shaolin Kung-Fu Keido</h1>
-            <p>Nord Shaolin Kung Fu je vhodné aj pre úplných začiatočníkov, rovnako pre mužov aj ženy bez rozdielu veku. Tréningy sú zamerané na kompletnú výučbu tohto bojového systému (založil ho Soke Yamaue, žijúca legenda vo svete bojových umení, medzinárodne uznávaný a oceňovaný). Na tréningoch sa naučíte prvky sebaobrany, začína sa od začiatku – základné postoje, pohyb v bojovom postoji, pády. Neskôr sa pridávajú základné údery, kopy a techniky, na základe ktorých cvičenec následne buduje ďalšie, náročnejšie prvky sebaobrany voči jednému, následne viacerým útočníkom. Pri vstupe do tréningovej miestnosti prichádzame do tzv. Dojo, kde zachovávame <a href="#pravidla" title="Etika a etiketa">tradičnú etiku a etiketu</a> bojových umení. Nájdete nás v <a href="https://www.cvckosice.sk/" title="CVČ Orgovánová" target="_blank">CVČ Orgovánova 5, Košice</a>.</p>
-            <img id="trening" src="obr/trening.jpg" alt="">
+            <h1>Filip Baltovič</h1>
+            <h2>O mne</h2>
+            <p>Volám sa Filip Baltovič, som z Košíc a študujem už tretí rok bakalársky program <a href="https://mod.karlin.mff.cuni.cz/studium/matematicke-modelovani-bc/" title="https://mod.karlin.mff.cuni.cz/studium/matematicke-modelovani-bc/" target="_blank">Matematické modelování</a> na <a href="https://www.mff.cuni.cz" title="https://www.mff.cuni.cz" target="_blank">Matematicko-fyzikálnej fakulte</a>, Karlova univerzita v Prahe</a>.</p>
         </section>
-        <section id="treningy">
-            <h2>Rozvrh tréningov</h2>
-            <table>
-                <tr>
-                    <th id="nic"></th>
-                    <th>Pondelok</th>
-                    <th>Štvrtok</th>
-                    <th>Miesto</th>
-                </tr>
-                <tr>
-                    <th>Nábor</th>
-                    <td colspan="2">16:30-17:45</td>
-                    <td rowspan="3">CVČ Orgovánova 5</td>
-                </tr>
-                <tr>
-                    <th>Mierne pokročilí</th>
-                    <td colspan="2">17:30-18:45</td>
-                </tr>
-                <tr>
-                    <th>Pokročilí</th>
-                    <td colspan="2">18:30-20:00</td>
-                </tr>
-            </table>
-        </section>
-        <section id="stlpce">
-            <div id="majster">
-                <h2>Majster Soke Yamaue</h2>
-                <p><a href="https://www.yamaue.com/" title="yamaue.com" target="_blank">Soke Jimmy Keido Yamaue</a> sa narodil v Japonsku v roku 1946 a absolvoval Univerzitu Ritsumeikan v Kyóte. Je ťažké povedať kedy začal s Aiki Jutsu, pretože sa narodil v Budo rodine. Jeho otec ho učil Judo a chiropraktické techniky, jeden z jeho strýkov Sensei Takeizu INOUE ho učil Goju Ryu Karate a strýko jeho otca ho učil Aiki Jutsu a Aikido.Strýko jeho otca – Takuma Hisa (1895-1979), bol veľkým majstrom v Daito Ryu Aiki Jutsu. Aiki Jutsu tvorilo časť jeho Budo vzdelania, ktoré získal v detstve.Yamaue Aiki Jutsu je príbuzné ku Takeda Aiki Bujutsu = Daito Ryu Aiki Jutsu.Soke takisto cvičil Shorinji Kempo (japonský štýl Shaolin Kung Fu) a veľa foriem čínskeho Kung Fu.Vo svete je veľmi dobre známy ako zakladateľ (10.Dan) Nord Shaolin Kung Fu (nový systém založený na tradícii severného shaolinu) a zakladateľ (10.Dan) Yamaue Ryu Aiki Jutsu.
-                </p>
-                <img src="obr/erb.jpg" alt="Erb Sokeho rodiny" title="Erb Sokeho rodiny">
-                <p>
-                Soke Yamaue každoročne dostáva viacero Budo ocenení, ocenenia z Medzinárodnej Siene Slávy a uznania z celého sveta.
-                </p>
-                <p>
-                Soke Yamaue  je hlavným predstaviteľom IBU (International Bujutsu University) a hlavou Kenshinkan Karate organizácie. V Goju-ryu Karate má Soke 8.Dan.
-                </p>
-                <p>
-                Soke Yamaue je budhistickým mníchom cisárskych palácov Daishoji a Saga (Daishoji Imperial Temple, Saga Imperial Palace) a pracuje ako kultúrny atašé pre obidva cisárske chrámy.
-                </p>
-                <p>
-                Soke vyučuje Nord Shaolin Kung Fu, Yamaue Ryu Aiki Jutsu, Goju Ryu Kenshinkan karate,Ju Jitsu, Kobudo a mnoho ďalších bojových umení po celom svete. 
-                </p>
-                <img src="obr/soke.jpg" alt="Soke Yamaue" title="Soke Yamaue">
-            </div>
-            <div id="trener">
-                <h2>Tréner Pavol Trcka</h2>
-                <ul>
-                    <li>Goju ryu Karate  – 6. Dan  od 8.11.2014 v asociácii KENSHINKAN Karate</li>
-                    <li>Nord Shaolin Kung Fu : v príprave na 4.Dan</li>
-                    <li>Lektor sebaobrany Mestskej polície v Spišskej Belej od r. 2011</li>
-                    <li>Asistent reprezentačného trénera SR pre kata do roku 2005</li>
-                    <li>Tréner a rozhodca III. Triedy od r.1990</li>
-                    <li>Tréner II. Triedy od r.1997</li>
-                    <li>Rozhodca II. Triedy od r.1993 karate</li>
-                    <li>Osobný študent Soke Yamaueho</li>
-                    <li>Go-ju ryu karate sa venuje od roku 1982  v TJ VSŽ Košice( od roku 1984 sa oddiel TJ VSŽ Košice premenoval na TJ Metropol Košice ) a zároveň  v začiatkoch cvičenia trénoval nejaký čas aj v klube UPJŠ Košice</li>
-                    <li>2002 – začiatok cvičenia Yamaue Ryu Aikijutsu a Nord Shaolin Kung Fu</li>
-                    <li>september 2005- odchádza z oddielu TJ Metropol Košice a zakladá vlastný oddiel oddiel KEIDO</li>
-                    <li>február 2006 – určený Soke Yamauem ako hlavný inštruktor  Nord Shaolin KungFu pre Slovensko</li>
-                </ul>
-                <h3>Úspechy:</h3>
-                <ul>
-                    <li>od 1995 – člen  reprezentácie Slovenska v kata seniori</li>
-                    <li>1996,1997-1.Miesto v Slovenskom pohári v karate Kata Seniori</li>
-                    <li>1991 -1. Miesto M-Východoslovenského kraja –Kumite do 75 kg seniori</li>
-                    <li>1992-1998,2000-1.Miesto M-Východoslovenského kraja v Kata seniori</li>
-                    <li>1997-2.Miesto M-SR Kata Seniori</li>
-                    <li>úspechy na súťažiach doma a v zahraničí</li>
-                    <li>1.- 3. miesta Cassovia Cup r.1993-1998</li>
-                    <li>1.- 3. miesta Bohemia Cup r.1994-1999</li>
-                    <li>1.miesto Gyongyos Cup 1992-1994</li>
-
-                </ul>
-                <img src="obr/trcka.png" alt="Pavol Trcka" title="Pavol Trcka">
-            </div>
-        </section>
-        <section id="nastup">
-            <h2>Nástup pri tréningu</h2>
-            <ol>
-                <li>Suware – pokyn k sadnúť si do sedu seiza</li>
-                <li>Šomen-ni rei</li>
-                <li>Sensei-ni rei/onegae shimasu (znamená prosím pomôž mi)</li>
-                <li>Senpai-ni rei</li>
-                <li>Otagai ni rei</li>
-                <li>Mokuso</li>
-                <li>Mokuso jame <br> <br> Po ňom všetci so zavretými očami nahlas odrecitujú Shaolinske zákony na počítanie senseia:
-                <dl>
-                    <dt>Zen a ken sú jedno</dt>
-                    <dd>akcia (Ken=Kung Fu) a duchovno (zenová filozofia) sú neoddelitelné</dd>
-                    <dt>Moje svedomie je strážcom mojich činov</dt>
-                    <dd>keď urobím niečo dobré, cítim sa dobre, keď urobím niečo zlé, cítim sa zle. Je príliš neskoro po zlom skutku hovoriť prepáč. Urob niečo dobré, aby si sa mohol cítiť dobre</dd>
-                    <dt>Sila a Láska nesmú byť oddelené</dt>
-                    <dd>Sila bez Lásky je násilie, Láska bez Sily nefunguje</dd>
-                    <dt>Ži napoli pre seba a napoli pre druhých</dt>
-                    <dd>mysli vždy na seba, ale minimálne z 50% aj na ostatných</dd>
-                </dl>
-                </li>
-                <li>Ihneď po dokončení posledného zákona všetci otvoria oči</li>
-                <li>Sensei zavelí „KIAI“ a študenti zakričia  KIAI!</li>
-                <li>Tate – vstáme, do postoja kesshu-gamae</li>
-            </ol>
-            <img src="obr/etiketa.jpg" alt="" id="etiketa">
-        </section>
-        <section id="pravidla">
-            <h2>Pravidlá v dojo</h2>
-            <p>Dojo je miesto, kde sa telesne i duchovne zdokonaľujeme. Preto, pre bezpečnosť a plynulosť cvičenia dodržiavame pravidlá. Medzi základné patrí:</p>
+        <section id="odkazy">
+            <h2>Zaujímavé odkazy</h2>
             <ul>
-                <li><strong><em>V dojo nie je nič povolené!</em></strong></li>
-                <li><strong><em>V dojo sa pracuje!</em></strong></li>
-                <li><strong><em>V dojo začina každý od začiatku!</em></strong></li>
+                <li><a href="https://siam.cuni.cz/en/" title="https://siam.cuni.cz/en/" target="_blank">SIAM Student Chapter Prague</a></li>
+                <li><a href="https://matfyzak.cz/wp/" title="https://matfyzak.cz/wp/" target="_blank">Spolek Matfyzák</a></li>
+                <li><a href="cv_baltovic.pdf" title="CV" target="_blank">
+                    Môj životopis</a></li>
             </ul>
-            <p><strong>Ďalšie z pravidiel dojo:</strong></p>
-            <ul>
-                <li>Pred vstupom do dojo sa vyzuj a odlož si topánky Pokiaľ nájdeš neupravenú obuv, taktiež ju vyrovnaj</li>
-                <li>Pokiaľ je za tebou skúsenejší študent, alebo majster, nechaj ho vojsť prvého</li>
-                <li>Pri vstupe do dojo sa ukloň, ruky sú v pozícii gassho</li>
-                <li>Potom sa ukloň oltáru (kamize, obrazu majstra) ,potom majstrovi (senseiovi) a všetkým vyšším technickým stupňom</li>
-                <li>Vždy buď zdvorilý k inštruktorom a všetkým vyšším stupňom a vôbec ku všetkým</li>
-                <li>Vždy sa snaž udržovať cvičebný odev čistý a upravený, v dojo cvič iba v čistom odeve</li>
-                <li>Nezabudni na zahrievacie cvičenie na začiatku každého cvičenia, i keď cvičíš sám</li>
-                <li>Keď pozoruješ cvičenie v dojo, seď vhodným spôsobom (seiza,agura)</li>
-                <li>Keď ti inštruktor dáva radu, alebo pokyn, počúvaj ho pozorne stoj v musubi dachi ruky v pozícii Kesshu-gamae a ak si rade rozumel daj to najavo pozdravom gassho a japonským slovom „HAI“ (áno), alebo keď si nerozumel slôvkom „IIE“ (nie)</li>
-                <li>Pri  každom odchode z dojo príď najprv za senseiom, alebo inštruktorom, ktorý vedie tréning, postav sa k nemu a čakaj, kedy si ťa všimne; ukloň sa a povedz, že chceš odísť, ukloň sa jemu a pri dverách dojo a odíť; keď sa vrátíš vojdi do dverí ukloň sa gassho, sadni si do seiza a čakaj, kým si ťa ten čo vedie tréning všimne a nezavolá ťa cvičiť; ukloň sa v seiza, vstaň, ukloň sa senseiovi a zaraď sa</li>
-                <li>Keď cvičíš s partnerom, ukloňte sa pred začiatkom cvičenia a po skončení sa znovu ukloň</li>
-                <li>Pred cvičením každej kata sa ukloň</li>
-                <li>Pri veľkej  úprave kimona sa ukloň, sadni do seiza a oprav si kimono</li>
-                <li>Pred každým vstávaním zo seiza sa ukloň, až tak vstaň; keď meníš polohu zo seiza do agura, tiež sa ukloň</li>
-                <li>Pri postoji yoi alebo kesshu maj ľavú ruku na pravej; pravá pred ľavou znamená smrť; to isté platí pre kimono (karate-gi), ľavá strana pred pravou</li>
-            </ul>
-            <img src="obr/obr3.jpg" id="obr3" alt="">
         </section>
-        <section id="galeria">
-            <h2>Galéria</h2>
-            <table>
-                <tr>
-                    <td><a href="obr/galeria/1p.jpg" target="_blank"><img src="obr/galeria/1m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/2p.jpg" target="_blank"><img src="obr/galeria/2m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/3p.jpg" target="_blank"><img src="obr/galeria/3m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/4p.jpg" target="_blank"><img src="obr/galeria/4m.jpg" alt=""></a></td>
-                </tr>
-                <tr>
-                    <td><a href="obr/galeria/5p.jpg" target="_blank"><img src="obr/galeria/5m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/6p.jpg" target="_blank"><img src="obr/galeria/6m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/7p.jpg" target="_blank"><img src="obr/galeria/7m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/8p.jpg" target="_blank"><img src="obr/galeria/8m.jpg" alt=""></a></td>
-                </tr>
-                <tr>
-                    <td><a href="obr/galeria/9p.jpg" target="_blank"><img src="obr/galeria/9m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/10p.jpg" target="_blank"><img src="obr/galeria/10m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/11p.jpg" target="_blank"><img src="obr/galeria/11m.jpg" alt=""></a></td>
-                    <td><a href="obr/galeria/12p.jpg" target="_blank"><img src="obr/galeria/12m.jpg" alt=""></a></td>
-                </tr>
-            </table>
-        </section>
-        <footer>
-            <img src="obr/miesto.png" alt="Miesto tréningu" title="Miesto tréningu" id="miesto">
+        
+        
+        <footer id="kontakt">
             <address>
-                Orgovánová 5, 040 11 Košice <br>
-                tel. +421 918 675 502 <br>
-                email: foxit23@gmail.com <br>
+                tel. +421 902 631 908 <br>
+                email: fbaltovic@gmail.com <br>
             </address>
-            <a href="https://sk-sk.facebook.com/pages/category/Sports-Team/%C5%A0portov%C3%BD-klub-Keido-Ko%C5%A1ice-681006305321455/" title="Facebook" target="_blank"><img id="facebook" src="obr/facebook.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/channel/UCMhRONP0OGBcRpKZ1URkoSg" title="Youtube" target="_blank"><img id="youtube" src="obr/youtube.png" alt="Youtube"></a>
-            <a href="mailto:foxit23@gmail.com" title="foxit23@gmail.com" target="_blank"><img id="gmail" src="obr/gmail.png" alt="foxit@gmail.com"></a>
-            <p id="copy">&copy; 2021 Športový klub Keido Košice, o.z.</p>
+            <a href="https://github.com/fbaltovic/" title="https://github.com/fbaltovic/" target="_blank"><img align="left" id="github" src="obr/github.png" alt="https://github.com/fbaltovic/"></a>
+            <a href="mailto:fbaltovic@gmail.com" title="fbaltovic@gmail.com" target="_blank"><img align="left" id="gmail" src="obr/gmail.png" alt="fbaltovic@gmail.com"></a>
         </footer>
     </body>
 </html>
